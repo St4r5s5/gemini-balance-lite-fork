@@ -7,7 +7,8 @@ import { Buffer } from "node:buffer";
 
 export default {
   async fetch (request) {
-    if (request.method === "OPTIONS") {
+    console.log(`using  OpenAI`);
+	if (request.method === "OPTIONS") {
       return handleOPTIONS();
     }
     const errHandler = (err) => {

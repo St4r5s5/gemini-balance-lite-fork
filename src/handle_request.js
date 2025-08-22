@@ -4,6 +4,7 @@ import openai from './openai.mjs';
 export async function handleRequest(request) {
 
   const url = new URL(request.url);
+  console.log("url: ", url);
   const pathname = url.pathname;
   const search = url.search;
 
